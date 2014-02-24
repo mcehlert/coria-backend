@@ -17,7 +17,7 @@ args = parser.parse_args()
 if args.profiling:
   pr = cProfile.Profile()
   s = StringIO.StringIO()
-  timestamp = str(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+  timestamp = str(datetime.datetime.now().strftime('%Y%m%d_%H%M%S'))
   outfile = open('profiling_output_'+timestamp+'.txt', 'w')
   pr.enable()
 
