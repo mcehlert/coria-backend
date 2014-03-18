@@ -3,6 +3,7 @@ import metrics
 import normalizations
 import advancedscores
 
+#redis keys for indexes and values
 node_index_key        = 'all_nodes'
 metric_index_key      = 'all_metrics'
 score_index_key       = 'all_scores'
